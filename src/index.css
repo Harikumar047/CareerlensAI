@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+:root {
+  --glass-bg: rgba(15, 23, 42, 0.6);
+  --glass-border: rgba(51, 65, 85, 0.5);
+  --india-saffron: #FF9933;
+  --india-green: #138808;
+  --indigo: #2563eb;
+  --indigo-light: rgba(37, 99, 235, 0.1);
+  --purple: #1e40af;
+  --purple-light: rgba(30, 64, 175, 0.1);
+  --dark: #f8fafc;
+  --muted: #94a3b8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background-color: #020617;
+  color: #f8fafc;
+  overflow-x: hidden;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Sidebar Active Indicator */
+.nav-item-active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20%;
+  height: 60%;
+  width: 4px;
+  background: #3b82f6;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 0 10px #3b82f6;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Custom transitions */
+.transition-dashboard {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Rural accessibility button enhancement */
+button {
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 48px;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* Scrollbar refinement */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Dashboard Enhancements */
+.glass-card {
+  @apply bg-black/40 backdrop-blur-2xl border border-white/5 rounded-[2.5rem] p-8 transition-all duration-500;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+.glass-card:hover {
+  @apply border-white/10 bg-black/60;
+  transform: translateY(-4px) scale(1.005);
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.8);
+}
+
+.score-ring-wrap {
+  @apply flex flex-col items-center justify-center relative py-4;
+}
+
+.score-ring {
+  @apply relative inline-flex items-center justify-center;
+  filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.2));
+}
+
+.score-ring-bg {
+  fill: none;
+  stroke: #1e293b;
+  stroke-width: 12;
+}
+
+.score-ring-fill {
+  fill: none;
+  stroke: #3b82f6;
+  stroke-width: 12;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  stroke-dasharray: 402.12;
+}
+
+.score-center {
+  @apply absolute inset-0 flex flex-col items-center justify-center;
+}
+
+.score-pct {
+  @apply text-4xl font-black text-white leading-none;
+}
+
+.score-lbl {
+  @apply text-[10px] uppercase tracking-widest font-bold text-slate-500 mt-1;
+}
+
+.score-tag {
+  @apply mt-6 px-4 py-1.5 bg-blue-600/20 text-blue-400 rounded-full text-xs font-black uppercase tracking-wider border border-blue-500/20;
+}
+
+.skill-list {
+  @apply flex flex-wrap gap-2 mt-4;
+}
+
+.skill-chip {
+  @apply flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold border transition-all;
+}
+
+.skill-chip.matched {
+  @apply bg-green-500/10 border-green-500/20 text-green-400;
+}
+
+.skill-chip.missing {
+  @apply bg-yellow-500/10 border-yellow-500/20 text-yellow-400;
+}
+
+.role-list {
+  @apply flex flex-col gap-4 mt-6;
+}
+
+.role-item {
+  @apply flex items-center justify-between p-5 bg-slate-800/30 border border-slate-700/50 rounded-2xl hover:border-blue-500/30 transition-all;
+}
+
+.role-name {
+  @apply font-black text-white text-lg;
+}
+
+.role-co {
+  @apply text-sm text-slate-400 font-medium;
+}
+
+.role-match {
+  @apply text-xl font-black text-blue-400;
+}
+
+.roadmap-title {
+  @apply text-2xl font-black text-white flex items-center gap-3 mb-8;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}

@@ -1,0 +1,116 @@
+[
+    {
+        "id": 1,
+        "title": "Digital Literacy Trainer",
+        "org": "Rural Dev Corp",
+        "required_edu": "12th Pass",
+        "skills": [
+            "Basic Computer",
+            "Hindi",
+            "Public Speaking"
+        ],
+        "sector": "Education",
+        "state": "Bihar",
+        "district": "Patna",
+        "duration": "6 Months",
+        "stipend": "₹15,000",
+        "type": "Onsite",
+        "isVerified": true,
+        "benefits": "Certificate + Near Home"
+    },
+    {
+        "id": 2,
+        "title": "Financial Inclusion Assistant",
+        "org": "Gramin Bank",
+        "required_edu": "B.Com / Any Graduate",
+        "skills": [
+            "Excel",
+            "Tally",
+            "Communication"
+        ],
+        "sector": "Finance",
+        "state": "Bihar",
+        "district": "Gaya",
+        "duration": "12 Months",
+        "stipend": "₹22,000",
+        "type": "Hybrid",
+        "isVerified": true,
+        "benefits": "Learning + Certificate"
+    },
+    {
+        "id": 3,
+        "title": "Agri-Tech Support Intern",
+        "org": "Krishi Seva",
+        "required_edu": "10th Pass",
+        "skills": [
+            "Smartphone usage",
+            "Local Language",
+            "Farming Knowledge"
+        ],
+        "sector": "Agriculture",
+        "state": "Bihar",
+        "district": "Patna",
+        "duration": "3 Months",
+        "stipend": "₹8,000",
+        "type": "Onsite",
+        "isVerified": false,
+        "benefits": "Hands-on Learning"
+    },
+    {
+        "id": 4,
+        "title": "Healthcare Awareness Coordinator",
+        "org": "Swasthya Kendra",
+        "required_edu": "12th Pass",
+        "skills": [
+            "Empathy",
+            "Data Entry",
+            "Hindi"
+        ],
+        "sector": "Healthcare",
+        "state": "Bihar",
+        "district": "Muzaffarpur",
+        "duration": "6 Months",
+        "stipend": "₹18,000",
+        "type": "Remote",
+        "isVerified": true,
+        "benefits": "Social Impact + Certificate"
+    },
+    {
+        "id": 5,
+        "title": "Solar Energy Technician",
+        "org": "Urja Rural",
+        "required_edu": "ITI / Diploma",
+        "skills": [
+            "Hardware",
+            "Maintenance",
+            "Basic Maths"
+        ],
+        "sector": "Energy",
+        "state": "Bihar",
+        "district": "Patna",
+        "duration": "12 Months",
+        "stipend": "₹25,000",
+        "type": "Onsite",
+        "isVerified": true,
+        "benefits": "Technical Skills + Near Home"
+    },
+    {
+        "id": 6,
+        "title": "E-Commerce Logistics Intern",
+        "org": "Bharat Mart",
+        "required_edu": "12th Pass",
+        "skills": [
+            "Mobile App usage",
+            "Hindi",
+            "Driving"
+        ],
+        "sector": "Technology",
+        "state": "Bihar",
+        "district": "Purnia",
+        "duration": "3 Months",
+        "stipend": "₹12,000",
+        "type": "Onsite",
+        "isVerified": true,
+        "benefits": "Experience Certificate"
+    }
+]
